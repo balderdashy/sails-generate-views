@@ -1,13 +1,13 @@
 {
-  "name": "sails-generate-sails-generate-views",
+  "name": "sails-generate-views",
   "version": "0.10.0",
-  "description": "Generate a sails-generate-views for Sails.",
+  "description": "Generate default views for Sails.",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
   },
   "keywords": [
-    "sails-generate-views",
+    "views",
     "generator",
     "sails",
     "generate",
@@ -26,8 +26,8 @@
   },
   "sails": {
   	"generator": {
-	 		"name": "sails-generate-views",
-	 		"behavior": "overrides `sails generate sails-generate-views`",
+	 		"name": "views",
+	 		"behavior": "overrides `sails generate views`",
 	 		"sailsVersion": "~0.10.0",
 	 		"main": "lib/index"
   	}

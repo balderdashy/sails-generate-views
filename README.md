@@ -1,9 +1,9 @@
 ![image_squidhome@2x.png](http://i.imgur.com/RIvu9.png)
 
-# sails-generate-sails-generate-views
+# sails-generate-views
 
 
-A `sails-generate-views` generator for use with the Sails command-line interface.
+A `views` generator for use with the Sails command-line interface.
 
 
 ### Installation
@@ -12,7 +12,7 @@ Certain generators are installed by default in Sails, but they can be overridden
 
 <!--
 ```sh
-$ npm install sails-generate-sails-generate-views
+$ npm install sails-generate-views
 ```
 -->
 
@@ -22,7 +22,7 @@ $ npm install sails-generate-sails-generate-views
 ##### On the command line
 
 ```sh
-$ sails generate sails-generate-views 
+$ sails generate views 
 ```
 
 ##### In a node script
@@ -33,7 +33,7 @@ var sailsgen = require('sails-generate');
 var scope = {
 	rootPath: path.resolve(__dirname)
 };
-sailsgen(require('sails-generate-sails-generate-views'), scope, function (err) {
+sailsgen(require('sails-generate-views'), scope, function (err) {
 	if (err) throw err;
 
 	// It worked.
@@ -46,8 +46,8 @@ sailsgen(require('sails-generate-sails-generate-views'), scope, function (err) {
 To get started quickly and see this generator in action, run the `bin/index.js` script:
 
 ```sh
-$ git clone YOUR_FORK_OF_THIS_REPO sails-generate-sails-generate-views-fork
-$ cd sails-generate-sails-generate-views-fork
+$ git clone YOUR_FORK_OF_THIS_REPO sails-generate-views-fork
+$ cd sails-generate-views-fork
 $ npm install
 $ node ./bin
 ```
