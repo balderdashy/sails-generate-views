@@ -1,0 +1,35 @@
+{
+  "name": "sails-generate-sails-generate-views",
+  "version": "0.10.0",
+  "description": "Generate a sails-generate-views for Sails.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "sails-generate-views",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "balderdashy",
+  "license": "MIT",
+  "dependencies": {
+  	"lodash": ">=2.4.x",
+  	"merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "sails": {
+  	"generator": {
+	 		"name": "sails-generate-views",
+	 		"behavior": "overrides `sails generate sails-generate-views`",
+	 		"sailsVersion": "~0.10.0",
+	 		"main": "lib/index"
+  	}
+  }
+}
