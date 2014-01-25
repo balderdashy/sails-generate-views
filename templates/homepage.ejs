@@ -30,7 +30,7 @@
                     <div>
                         <h3>Get your API going.</h3>
                         <p>
-                            Run <span class="boxy">sails generate foo</span>.  This will create a model <span class="boxy">Foo</span> and controller <span class="boxy">FooController</span>
+                            Run <span class="boxy">sails generate api user</span>.  This will create two files: a model <span class="boxy">api/models/User.js</span> and a controller <span class="boxy">api/controllers/UserController.js</span>
                         </p>
                     </div>
                 </li>
@@ -41,7 +41,7 @@
                             Lift your app.
                         </h3>
                         <p>
-                            Run <span class="boxy">sails lift</span> to start up your app.  If you visit <span class="boxy">http://localhost:1337/foo</span> in your browser, you'll see a socket.io-compatible REST API was generated for your 'Foo' model.
+                            Run <span class="boxy">sails lift</span> to start up your app server.  If you visit <a href="http://localhost:1337/user"><span class="boxy">http://localhost:1337/user</span></a> in your browser, you'll see a socket.io-compatible REST API was generated for your 'User' model.
                         </p>
                     </div>
                 </li>
@@ -51,7 +51,10 @@
                         <h3>
                             Dive in and start building.
                         </h3>
-                        <p>From here, you can modify your models, create custom controller methods as Express middleware, and create custom routes (routes are set up in <span class="boxy">config/routes.js</span>).  Visit <a href="http://sailsjs.org">the Sails website</a> for more information on next steps.</p>
+                        <p>From here, you might modify your `User` model, set up policies, configure CORS, and/or define your own explicit routes (see this project's <span class="boxy">config/routes.js</span> file.)  To override all or part of the built-in API with custom logic, just write your own controller <a href="http://links.sailsjs.org/docs/controllers">actions</a> and they'll override the defaults.  Sails syntax follows well-established Node conventions-- in fact, Sails actions are <a href="http://links.sailsjs.org/guide/migrating-an-express-app">compatible with existing Express code</a>, with the added bonus of supporting <a href="http://links.sailsjs.org/docs/interpreter">both HTTP and WebSockets</a> out of the box.</p>
+
+                        <p>Visit <a href="http://sailsjs.org">the Sails website</a> for more info and tips on getting started.</p>
+
                     </div>
                 </li>
             </ul>
@@ -80,7 +83,13 @@
                 <a target="_blank" href="http://sailsjs.org">Visit sailsjs.org</a>
             </li>
             <li>
-                <a target="_blank"  href="http://links.sailsjs.org/docs">Documentation</a>
+                <a target="_blank"  href="http://links.sailsjs.org/docs">Read the docs</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://links.sailsjs.org/docs/faq">Frequently asked questions</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://stackoverflow.com">Ask a question on StackOverflow</a>
             </li>
         </ul>
         <h4>
