@@ -55,10 +55,27 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div><%
+
+        //
+        // If we know the relative path to the current
+        // view, display it.
+        //
+
+        if ( typeof view !== 'undefined' ) {
+        %>
         <div class="delete">
-            <div class="sprite">You're looking at: <span class="boxy">views/home/index.ejs</span></div>
-        </div>
+            <div class="sprite">
+                You're looking at <span class="boxy"><%= view.pathFromApp %>.<%= view.ext %></span><%
+
+                // Display absolute path to this view as well, if accessible (only during available development)
+                if ( typeof __dirname !== 'undefined' ) {
+                    %><br/>(located at <a href="file://<%= __dirname %>"><%= __dirname %></a>)<%
+                }
+            %>
+            </div>
+        </div><%
+    	} %>
     </div>
     <div class="side-bar">
         <h4 id="new">
