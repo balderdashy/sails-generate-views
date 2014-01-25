@@ -66,13 +66,7 @@
         %>
         <div class="delete">
             <div class="sprite">
-                You're looking at <span class="boxy"><%= view.pathFromApp %>.<%= view.ext %></span><%
-
-                // Display absolute path to this view as well, if accessible (only during available development)
-                if ( typeof __dirname !== 'undefined' ) {
-                    %><br/>(located at <a href="file://<%= __dirname %>"><%= __dirname %></a>)<%
-                }
-            %>
+                You're looking at <span class="boxy"><%= view.pathFromApp %>.<%= view.ext %></span>
             </div>
         </div><%
     	} %>
