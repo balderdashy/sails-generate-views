@@ -26,10 +26,9 @@
   },
   "sails": {
     "generator": {
-      "name": "views",
+      "type": "views",
       "behavior": "overrides `sails generate views`",
-      "sailsVersion": "~0.10.0",
-      "main": "lib/index"
+      "sailsVersion": "~0.10.0"
     }
   }
 }
