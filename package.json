@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-views",
-  "version": "0.11.2",
+  "version": "0.10.0",
   "description": "Generate default views for Sails.",
   "main": "lib/index.js",
   "scripts": {
@@ -25,8 +25,8 @@
     "fs-extra": "*"
   },
   "sailsGenerator": {
-      "type": "views",
-      "behavior": "overrides `sails generate views`",
-      "sailsVersion": "~0.10.0"
+    "type": "views",
+    "behavior": "overrides `sails generate views`",
+    "sailsVersion": "~0.10.0"
   }
 }
