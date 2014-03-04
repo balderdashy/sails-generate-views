@@ -22,7 +22,7 @@ $ npm install sails-generate-views
 ##### On the command line
 
 ```sh
-$ sails generate views 
+$ sails generate views
 ```
 
 ##### In a node script

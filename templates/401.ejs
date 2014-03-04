@@ -2,31 +2,31 @@
 <!--
 
 
-       444444444       000000000      333333333333333
-      4::::::::4     00:::::::::00   3:::::::::::::::33
-     4:::::::::4   00:::::::::::::00 3::::::33333::::::3
-    4::::44::::4  0:::::::000:::::::03333333     3:::::3
-   4::::4 4::::4  0::::::0   0::::::0            3:::::3
-  4::::4  4::::4  0:::::0     0:::::0            3:::::3
- 4::::4   4::::4  0:::::0     0:::::0    33333333:::::3
-4::::444444::::4440:::::0 000 0:::::0    3:::::::::::3
-4::::::::::::::::40:::::0 000 0:::::0    33333333:::::3
-4444444444:::::4440:::::0     0:::::0            3:::::3
-          4::::4  0:::::0     0:::::0            3:::::3
-          4::::4  0::::::0   0::::::0            3:::::3
-          4::::4  0:::::::000:::::::03333333     3:::::3
-        44::::::44 00:::::::::::::00 3::::::33333::::::3
-        4::::::::4   00:::::::::00   3:::::::::::::::33
-        4444444444     000000000      333333333333333
+       444444444       000000000        1111111
+      4::::::::4     00:::::::::00     1::::::1
+     4:::::::::4   00:::::::::::::00  1:::::::1
+    4::::44::::4  0:::::::000:::::::01::::::::1
+   4::::4 4::::4  0::::::0   0::::::0   1:::::1
+  4::::4  4::::4  0:::::0     0:::::0   1:::::1
+ 4::::4   4::::4  0:::::0     0:::::0   1:::::1
+4::::444444::::4440:::::0 000 0:::::0   1:::::1
+4::::::::::::::::40:::::0 000 0:::::0   1:::::1
+4444444444:::::4440:::::0     0:::::0   1:::::1
+          4::::4  0:::::0     0:::::0   1:::::1
+          4::::4  0::::::0   0::::::0   1:::::1
+          4::::4  0:::::::000:::::::0   1:::::1
+        44::::::44 00:::::::::::::00  11:::::::11
+        4::::::::4   00:::::::::00    11:::::::11
+        4444444444     000000000      11111111111
 
 
 
-  This is the default "403: Forbidden" page.
+  This is the default "401: Unauthorized" page.
   User agents that don't "Accept" HTML will see a JSON version instead.
-  You can customize the control logic for your needs in `config/403.js`
+  You can customize the control logic for your needs in `config/401.js`
 
   You can trigger this response from one of your controllers or policies with:
-  `return res.forbidden( msg );`
+  `return res.unauthorized( msg );`
   (where `msg` is an optional error message to include in the response)
 
 
@@ -35,7 +35,7 @@
 -->
 <html>
   <head>
-    <title>Forbidden</title>
+    <title>Unauthorized</title>
     <link href='http://sailsjs.org/styles/fonts.css' rel='stylesheet'/>
     <style>
       /* Styles included inline since you'll probably be deleting or replacing this page anyway */
@@ -51,17 +51,17 @@
 
       <div class="main">
         <h1>
-          Forbidden
+          Unauthorized
         </h1>
         <h2>
-          <% if (typeof message !== 'undefined') { %>
+          <% if (typeof message !== 'undefined') { %>
           <%= message %>
           <% } else { %>
-          You don't have permission to see the page you're trying to reach.
+          You need to be authenticated to see the page you're trying to reach.
           <% } %>
         </h2>
         <p class="help">
-          <a href="http://en.wikipedia.org/wiki/HTTP_403">Why</a> might this be happening?
+          <a href="http://en.wikipedia.org/wiki/HTTP_401">Why</a> might this be happening?
         </p>
       </div>
 
