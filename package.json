@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-views",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "description": "Generate default views for Sails.",
   "main": "lib/index.js",
   "scripts": {
