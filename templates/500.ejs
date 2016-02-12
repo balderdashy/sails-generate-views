@@ -54,9 +54,9 @@
         <h2>
           Something isn't right here.
         </h2>
-        <% if (typeof error !== 'undefined') { %>
+        <% if (typeof data !== 'undefined') { %>
         <pre class="error"><code>
-        	<%- error %>
+          <%- data %>
         </code></pre>
         <% } else { %>
        <p class="error">
